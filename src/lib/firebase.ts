@@ -2,12 +2,12 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  "projectId": "studio-2498172584-c377b",
-  "appId": "1:880540770497:web:edde11849e8477a23ff440",
-  "apiKey": "AIzaSyBC1ZG0Zzb2Pd_SDjkMzROy4uwAT8XueLA",
-  "authDomain": "studio-2498172584-c377b.firebaseapp.com",
+  "projectId": "Your-id",
+  "appId": "Your-App-Id",
+  "apiKey": "Your-ApiKey",
+  "authDomain": "Your-Domain",
   "measurementId": "",
-  "messagingSenderId": "880540770497"
+  "messagingSenderId": "YourSenderId"
 };
 
 const app = initializeApp(firebaseConfig);
