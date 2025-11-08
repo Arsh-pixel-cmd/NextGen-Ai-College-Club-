@@ -36,18 +36,14 @@ const MenuOverlay = ({ isOpen, onClose }: MenuOverlayProps) => {
       className="fixed top-0 left-0 w-full h-full bg-black flex flex-col justify-center items-center z-40 transform translate-x-full transition-transform duration-500 ease-in-out overflow-hidden"
     >
       {/* Video Background */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-900/50 to-blue-900/50 z-0" />
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-900/50 to-blue-900/50 z-0" >
+      <video src="src/videos/menuBackground.mp4" autoPlay loop muted className="w-full h-full object-cover"></video>
+      </div>
       
       {/* Dark Overlay for Readability */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-10" />
       
-      <button 
-        id="menu-close"
-        className="absolute top-6 right-6 lg:top-8 lg:right-8 text-xl font-bold tracking-wider text-white focus:outline-none z-20"
-        onClick={onClose}
-      >
-        CLOSE
-      </button>
+      
       
       <nav className="text-center z-20">
         <ul className="space-y-4">
