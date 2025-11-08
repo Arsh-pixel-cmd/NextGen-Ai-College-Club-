@@ -15,6 +15,7 @@
     --dark-foreground: 0 0% 100%;
     
     /* AI Theme Colors */
+    --neon-green-rgb: 105, 100%, 54%;
     --neon-green: 105 100% 54%;
     --neon-red: 348 100% 50%;
     --neon-yellow: 60 100% 50%;
@@ -27,6 +28,8 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
     
     /* Form Elements */
     --input-border: 210 13% 28%;
@@ -34,6 +37,7 @@
     
     /* UI Elements */
     --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
     --radius: 0.5rem;
 
@@ -48,6 +52,16 @@
     --shadow-neon: 0 0 16px;
   }
   
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-dark-bg text-dark-fg font-inter;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   /* GSAP Animation Classes */
   .gsap-reveal {
     opacity: 0;
@@ -78,7 +92,10 @@
     from { background-position: 0 0; }
     to { background-position: 4rem 4rem; }
   }
-  
+}
+
+
+@layer components {
   /* Custom Utility Classes */
   .marquee-animation {
     animation: marquee 20s linear infinite;
@@ -104,7 +121,7 @@
     background-image: 
       linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
       linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-    background-size: 4rem 4rem;
+    background-size: 2rem 2rem; /* Smaller grid for mobile */
     animation: moveGrid 15s linear infinite;
     opacity: 0.2;
     z-index: -1;
@@ -156,7 +173,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem 2rem;
+    padding: 6rem 1rem; /* Adjusted padding for mobile */
+    position: relative;
+  }
+
+  .section-standard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
     position: relative;
   }
   
@@ -165,35 +192,45 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 18vw;
+    width: 30vw; /* Slightly larger on mobile for visibility */
     height: auto;
     max-width: 250px;
-    min-width: 120px;
+    min-width: 100px;
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.75rem; /* smaller radius for mobile */
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transform-origin: center;
   }
-  
-  .flying-video {
-    position: fixed;
-    z-index: 15;
-    visibility: hidden;
-    object-fit: cover;
-    border-radius: 0.75rem;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+
+  .news-card {
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.3s;
+  }
+  .news-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .glow-border {
+    transition: box-shadow 0.3s;
+  }
+  .news-card:hover .glow-border {
+    box-shadow: 0 0 15px rgba(var(--neon-green-rgb), 0.5), 0 0 5px rgba(var(--neon-green-rgb), 0.8);
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .section-full {
+    padding: 8rem 2rem;
   }
-
-  body {
-    @apply bg-dark-bg text-dark-fg font-inter;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  .section-standard {
+    padding: 6rem 2rem;
+  }
+  .grid-animated::before {
+    background-size: 4rem 4rem; /* Larger grid for desktop */
+  }
+  .cluster-media {
+    width: 18vw;
+    border-radius: 1rem;
   }
 }
