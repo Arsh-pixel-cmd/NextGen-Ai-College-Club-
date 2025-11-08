@@ -15,4 +15,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+
+  // 👇👇 Add this section (this is the one-line global fix)
+  base: mode === "production" ? "/NextGen-Ai-College-Club-/" : "/",
 }));
