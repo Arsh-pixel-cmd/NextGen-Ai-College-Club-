@@ -14,6 +14,7 @@ import EventsSection from "@/components/EventsSection";
 import MemberAccess from "@/components/MemberAccess";
 import { auth } from "@/lib/firebase";
 import { onAuthStateChanged, User } from "firebase/auth";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,6 +62,8 @@ const Index = () => {
           ) : (
             <MemberAccess />
           )}
+
+          <Footer />
         </div>
       </main>
 
