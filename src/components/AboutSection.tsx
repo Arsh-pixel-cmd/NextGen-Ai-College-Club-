@@ -90,7 +90,7 @@ const AboutSection = () => {
           >
             <video
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="src/videos/aboutsection_!.mp4"
+              src="/videos/aboutsection_!.mp4"
               autoPlay
               loop
               muted
@@ -106,7 +106,7 @@ const AboutSection = () => {
           >
             <video
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="src/videos/aboutsection_2.mp4"
+              src="/videos/aboutsection_2.mp4"
               autoPlay
               loop
               muted
@@ -121,7 +121,7 @@ const AboutSection = () => {
           >
             <video
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="src/videos/aboutsection_3.mp4"
+              src="/videos/aboutsection_3.mp4"
               autoPlay
               loop
               muted

@@ -37,7 +37,7 @@ const MenuOverlay = ({ isOpen, onClose }: MenuOverlayProps) => {
     >
       {/* Video Background */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-purple-900/50 to-blue-900/50 z-0" >
-      <video src="src/videos/menuBackground.mp4" autoPlay loop muted className="w-full h-full object-cover"></video>
+      <video src="/videos/menuBackground.mp4" autoPlay loop muted className="w-full h-full object-cover"></video>
       </div>
       
       {/* Dark Overlay for Readability */}

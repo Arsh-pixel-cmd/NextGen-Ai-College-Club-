@@ -11,21 +11,21 @@ const ProjectsSection = () => {
       title: " From Prompt to Publish ",
       subtitle: "Exclusive College Ai Workshop",
       description: "A hands-on workshop to build a complete website with AI using bolt.new, Rocket.ai etc, and master workflow automation with NextGenX Ai Club.",
-      image: "src/assets/IstProject.png", 
+      image: "/assets/IstProject.png", 
       link: "https://web-for-event-registration.netlify.app/" 
     },
     {
       title: "Smart Agriculture Solutions",
       subtitle: "India's Most Advanced Agricultural Platform",
       description: "Empower your farming with AI-powered crop diagnosis, real-time market prices, expert consultation, and comprehensive learning resources.",
-      image: "src/assets/2ndProject.png",
+      image: "/assets/2ndProject.png",
       link: "https://inquisitive-llama-5c0d10.netlify.app/"
     },
     {
       title: "Automate DMs on Instagram.",
       subtitle: "Instantly. Intelligently.",
       description: "Respond to reel comments with custom messages. Turn engagement into leads.",
-      image: "src/assets/3rdProject.png",
+      image: "/assets/3rdProject.png",
       link: "https://fabulous-cassata-18a9d6.netlify.app/"
     }
   ];

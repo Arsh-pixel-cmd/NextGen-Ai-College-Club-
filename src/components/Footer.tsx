@@ -138,7 +138,7 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-center justify-center md:justify-start gap-3">
                   <Mail className="h-4 w-4 text-neon-green" />
-                  <a href="mailto:dtclub@niet.co.in" className="text-gray-400 hover:text-white">mail here </a>
+                  <a href="mailto:dtclub@niet.co.in" className="text-gray-400 hover:text-white">nextgenxai@iilm.edu</a>
                 </li>
                 <li className="flex items-center justify-center md:justify-start gap-3">
                   <Phone className="h-4 w-4 text-neon-green" />
@@ -178,7 +178,7 @@ export default function Footer() {
                 onClick={() => setIsModalOpen(true)} 
                 className="font-semibold text-gray-300 hover:text-neon-green cursor-pointer"
                 whileHover={{ scale: 1.05 }}
-              > Arsh Mishra </motion.span> 
+              > NextGenXAi-Developer Team </motion.span> 
             </p>
           </motion.div>
         </div>
@@ -198,10 +198,10 @@ export default function Footer() {
                 <p className="font-semibold">{dev.name}</p>
                 <div className="flex items-center gap-4">
                   <a href={dev.github} target="_blank" rel="noopener noreferrer" aria-label={`${dev.name}'s GitHub`} className="transition-transform hover:scale-110">
-                     <img src="src/assets/github.png" alt="GitHub" className="w-8 h-8 rounded-full" data-ai-hint="social media icon" />
+                     <img src="/assets/github.png" alt="GitHub" className="w-8 h-8 rounded-full" data-ai-hint="social media icon" />
                   </a>
                   <a href={dev.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${dev.name}'s LinkedIn`} className="transition-transform hover:scale-110">
-                     <img src="src/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8 rounded-full" data-ai-hint="social media icon" />
+                     <img src="/assets/linkedin.png" alt="LinkedIn" className="w-8 h-8 rounded-full" data-ai-hint="social media icon" />
                   </a>
                 </div>
               </div>
