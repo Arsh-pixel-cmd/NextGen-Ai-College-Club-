@@ -3,12 +3,12 @@ import { useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
 
 // Import images so Vite can process them
-import UJoshi from '../assets/urvashiAmitkumarJoshi.jpg';
-import BalaSir from '../assets/balaSir.jpg';
-import Vicky from '../assets/vicky.jpg';
-import Photo2025 from '../assets/PHOTO-2025-11-07-02-53-10.jpg';
-import KhushiRanjan from '../assets/khushiRanjan.jpg';
-import KhushiSharma from '../assets/khushiSharma.jpg';
+import UJoshi from '/assets/urvashiAmitkumarJoshi.jpg';
+import BalaSir from '/assets/balaSir.jpg';
+import Vicky from '/assets/vicky.jpg';
+import Photo2025 from '/assets/PHOTO-2025-11-07-02-53-10.jpg';
+import KhushiRanjan from '/assets/khushiRanjan.jpg';
+import KhushiSharma from '/assets/khushiSharma.jpg';
 
 type ImageItem = string | { src: string; alt?: string };
 

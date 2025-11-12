@@ -155,7 +155,7 @@ const ContactSection = () => {
         >
           <div className="w-full h-full rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="src/assets/con 3.jpg"
+              src="/assets/con 3.jpg"
               alt="Contact Illustration"
               className="w-full h-full object-cover"
               loading="lazy"

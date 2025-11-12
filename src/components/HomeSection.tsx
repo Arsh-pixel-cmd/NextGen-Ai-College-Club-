@@ -160,7 +160,7 @@ const HomeSection = ({ user }: HomeSectionProps) => {
         <video
           ref={bgVideoRef}
           className="w-[60vmin] h-[60vmin] rounded-3xl object-cover shadow-2xl transition-all duration-500"
-          src="src/videos/homepage.mp4"
+          src="/videos/homepage.mp4"
           autoPlay
           loop
           muted

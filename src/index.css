@@ -245,3 +245,6 @@
     opacity: 0;
   }
 }
+h1 {
+  will-change: transform;
+}

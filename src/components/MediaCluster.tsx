@@ -9,18 +9,18 @@ const MediaCluster = () => {
   const mobileFloatTimelines = useRef<gsap.core.Timeline[]>([]);
 
   const mediaData = [
-    { src: "src/assets/web image one.jpg", alt: "AI Neural Networks" },
-    { src: "src/assets/web 2.jpg", alt: "AI Robot Face" },
-    { src: "src/assets/we 3.jpg", alt: "Digital Brain" },
-    { src: "src/assets/web 4.jpg", alt: "Futuristic City" },
-    { src: "src/assets/web 5.jpg", alt: "Machine Learning" },
-    { src: "src/assets/web 6.jpg", alt: "AI Lab Students" },
-    { src: "src/assets/web 7.jpg", alt: "AI Concept 7" },
-    { src: "src/assets/web 8.jpg", alt: "AI Concept 8" },
-    { src: "src/assets/web 9 - Copy.jpg", alt: "AI Concept 9" },
-    { src: "src/assets/web 10 - Copy.jpg", alt: "AI Concept 10" },
-    { src: "src/assets/web 11 - Copy.jpg", alt: "AI Concept 11" },
-    { src: "src/assets/web 12 - Copy.jpg", alt: "AI Concept 12" },
+    { src: "/assets/web image one.jpg", alt: "AI Neural Networks" },
+    { src: "/assets/web 2.jpg", alt: "AI Robot Face" },
+    { src: "/assets/we 3.jpg", alt: "Digital Brain" },
+    { src: "/assets/web 4.jpg", alt: "Futuristic City" },
+    { src: "/assets/web 5.jpg", alt: "Machine Learning" },
+    { src: "/assets/web 6.jpg", alt: "AI Lab Students" },
+    { src: "/assets/web 7.jpg", alt: "AI Concept 7" },
+    { src: "/assets/web 8.jpg", alt: "AI Concept 8" },
+    { src: "/assets/web 9 - Copy.jpg", alt: "AI Concept 9" },
+    { src: "/assets/web 10 - Copy.jpg", alt: "AI Concept 10" },
+    { src: "/assets/web 11 - Copy.jpg", alt: "AI Concept 11" },
+    { src: "/assets/web 12 - Copy.jpg", alt: "AI Concept 12" },
   ];
 
   const basePositions = useMemo(
