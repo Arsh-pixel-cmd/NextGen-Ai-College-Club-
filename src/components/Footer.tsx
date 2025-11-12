@@ -104,7 +104,7 @@ export default function Footer() {
             <motion.div variants={itemVariants} className="lg:col-span-2 text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start gap-3 ">
                 <Image
-                  src="src/assets/clubLogo.png"
+                  src="/assets/clubLogo.png"
                   alt="NEXTGENXAI"
                   width={40}
                   height={40}
